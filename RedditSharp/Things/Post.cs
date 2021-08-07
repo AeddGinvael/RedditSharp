@@ -133,6 +133,12 @@ namespace RedditSharp.Things
         /// </summary>
         [JsonProperty("title")]
         public string Title { get; private set; }
+        
+        /// <summary>
+        /// Post hint.
+        /// </summary>
+        [JsonProperty("post_hint")]
+        public string PostHint { get; private set; }
 
         /// <summary>
         /// Parent subreddit name.

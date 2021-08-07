@@ -28,5 +28,11 @@ namespace RedditSharp.Things
         /// </summary>
         [JsonProperty("enabled")]
         public bool Enabled { get; private set; }
+        
+        /// <summary>
+        /// Video preview with metadata
+        /// </summary>
+        [JsonProperty("reddit_video_preview")]
+        public RedditVideoPreview RedditVideoPreview { get; private set; }
     }
 }
