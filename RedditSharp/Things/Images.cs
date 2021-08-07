@@ -28,6 +28,9 @@ namespace RedditSharp.Things
         /// </summary>
         [JsonProperty("resolutions")]
         public List<Image> Resolutions { get; private set; }
+        
+        [JsonProperty("variants")]
+        public Variants Variants { get; private set; }
 
         /// <summary>
         /// Post preview id.

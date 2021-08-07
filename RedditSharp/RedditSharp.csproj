@@ -5,9 +5,10 @@
     <VersionPrefix>2.0.0</VersionPrefix>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AssemblyName>RedditSharp</AssemblyName>
-    <PackageId>RedditSharp</PackageId>
-    <PackageProjectUrl>https://github.com/CrustyJew/RedditSharp</PackageProjectUrl>
+    <PackageId>AeddGinvael.RedditSharp</PackageId>
+    <PackageProjectUrl>https://github.com/AeddGinvael/RedditSharp</PackageProjectUrl>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageVersion>2.0.1</PackageVersion>
   </PropertyGroup>
 
   <ItemGroup>
