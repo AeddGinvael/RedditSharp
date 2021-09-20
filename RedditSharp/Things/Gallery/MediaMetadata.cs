@@ -16,7 +16,7 @@ namespace RedditSharp.Things.Gallery
         public string MimeType { get; private set; }
         
         [JsonProperty("o")]
-        public GalleryContent BlurContent { get; private set; }
+        public IEnumerable<GalleryContent> BlurContent { get; private set; }
         
         [JsonProperty("s")]
         public GalleryContent OriginalContent { get; private set; }
