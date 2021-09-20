@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using System.Collections;
+using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace RedditSharp.Things.Gallery
 {
@@ -20,7 +22,7 @@ namespace RedditSharp.Things.Gallery
         public GalleryContent OriginalContent { get; private set; }
         
         [JsonProperty("p")]
-        public GalleryContent[] ContentResolutions { get; private set; }
+        public IEnumerable<GalleryContent> ContentResolutions { get; private set; }
     }
 
 
