@@ -170,13 +170,13 @@ namespace RedditSharp.Things
         public string CrosspostParent { get; private set; }
         
         [JsonProperty("is_gallery")]
-        public string IsGallery { get; private set; }
+        public bool IsGallery { get; private set; }
         
         [JsonProperty("gallery_data")]
         public GalleryData GalleryData { get; private set; }
         
         [JsonProperty("media_metadata")]
-        public MediaMetadata MediaMetadata { get; private set; }
+        public Dictionary<string, MediaMetadata> MediaMetadata { get; private set; }
 
         /// <summary>
         /// Returns the parent <see cref="Subreddit"/> for this post
