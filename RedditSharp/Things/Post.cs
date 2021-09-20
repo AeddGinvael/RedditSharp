@@ -8,6 +8,7 @@ using System.Reactive.Linq;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Collections.Immutable;
+using RedditSharp.Things.Gallery;
 
 namespace RedditSharp.Things
 {
@@ -167,6 +168,15 @@ namespace RedditSharp.Things
 
         [JsonProperty("crosspost_parent")]
         public string CrosspostParent { get; private set; }
+        
+        [JsonProperty("is_gallery")]
+        public string IsGallery { get; private set; }
+        
+        [JsonProperty("gallery_data")]
+        public GalleryData GalleryData { get; private set; }
+        
+        [JsonProperty("media_metadata")]
+        public MediaMetadata MediaMetadata { get; private set; }
 
         /// <summary>
         /// Returns the parent <see cref="Subreddit"/> for this post
